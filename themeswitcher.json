@@ -1,0 +1,26 @@
+{
+    "id": "com.aman.sap.theme",
+    "version": "1.0.0",
+    "name": "Theme Switcher",
+    "description": "SAP Custom widget to switch themes dynamically.",
+    "newInstancePrefix": "ThemeSwitcher",
+    "vendor": "Aman Singh",
+    "eula": "",
+    "license": "MIT",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-aman-sap-themeswitcher",
+            "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/ThemeSwitcher@1.0.0/ThemeSwitcher.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-aman-sap-themeswitcher-builder",
+            "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/ThemeSwitcher@1.0.0/ThemeSwitcher_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+}
