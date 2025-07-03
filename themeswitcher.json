@@ -15,5 +15,56 @@
             "integrity": "",
             "ignoreIntegrity": true
         }
-    ]
+    ],
+    "properties": {
+        "message": {
+            "description": "Message to send",
+            "type": "string",
+            "default": "Hello from SAP"
+        },
+        "caption": {
+            "description": "Caption",
+            "type": "string",
+            "default": "Send to Teams"
+        }
+    },
+    "methods": {
+        "setMessage": {
+            "description": "Set Message to send",
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "string",
+                    "description": "Message to send"
+                }
+            ],
+            "body": "this.message = message;"
+        },
+        "getMessage": {
+            "returnType": "string",
+            "description": "Return Message to send",
+            "body": "return this.message;"
+        },
+        "setCaption": {
+            "description": "Set Caption",
+            "parameters": [
+                {
+                    "name": "caption",
+                    "type": "string",
+                    "description": "Caption"
+                }
+            ],
+            "body": "this.caption = caption;"
+        },
+        "getCaption": {
+            "returnType": "string",
+            "description": "Return Caption",
+            "body": "return this.caption;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
 }
